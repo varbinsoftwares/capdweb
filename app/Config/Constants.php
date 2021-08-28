@@ -13,6 +13,21 @@
  | NOTE: changing this will require manually modifying the
  | existing namespaces of App\* namespaced-classes.
  */
+
+if ( (! empty($_SERVER['REQUEST_SCHEME']) && $_SERVER['REQUEST_SCHEME'] == 'https') ||
+     (! empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ||
+     (! empty($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == '443') ) {
+    $protocole = 'https://';
+} else {
+    $protocole = 'http://';
+}
+
+$host = $_SERVER['HTTP_HOST'] . '/';
+$project = explode('/', $_SERVER['REQUEST_URI']);
+$baseurl = $protocole . $host . $project[1];
+$myappBaseUrl = $baseurl.'/';
+defined('BASESEURL') || define('BASESEURL',$myappBaseUrl);
+
 defined('APP_NAMESPACE') || define('APP_NAMESPACE', 'App');
 
 /*
