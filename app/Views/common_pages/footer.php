@@ -16,7 +16,7 @@
 							</li>
 							<li>
 								<span><i class="fas fa-phone-alt"></i></span>
-								<p>Phone <span> <a href="tel:+10000000000">+91-9960877313</a></span></p>
+								<p>Phone <span> <a href="tel:+91-9960877313">+91-9960877313</a></span></p>
 							</li>
 							<li>
 								<span><i class="fas fa-map-marker-alt"></i></span>
@@ -68,13 +68,14 @@
 	</footer>
 
 
-	<script data-cfasync="false" src="public/assets/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="public/assets/js/vendor/modernizr-3.5.0.min.js"></script>
-	<script src="public/assets/js/jquery.min.js"></script>
-	<script src="public/assets/js/bootstrap.bundle.min.js"></script>
-	<script src="public/assets/js/plugin.min.js"></script>
-	<script src="public/assets/js/preloader.js"></script>
+	<script data-cfasync="false" src="<?php echo base_url("public/assets/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js");?>"></script>
+        <script src="<?php echo base_url("public/assets/js/vendor/modernizr-3.5.0.min.js");?>"></script>
+	<script src="<?php echo base_url("public/assets/js/jquery.min.js");?>"></script>
+	<script src="<?php echo base_url("public/assets/js/bootstrap.bundle.min.js");?>"></script>
+	<script src="<?php echo base_url("public/assets/js/plugin.min.js");?>"></script>
+	<script src="<?php echo base_url("public/assets/js/preloader.js");?>"></script>
 
-	<script src="public/assets/js/main.js"></script>
+	<script src="<?php echo base_url("public/assets/js/main.js");?>"></script>
 </body>
 
 </html>

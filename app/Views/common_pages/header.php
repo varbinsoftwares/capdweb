@@ -11,15 +11,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="theme-color" content="#2e2a8f">
 
-        <link href="<?php echo base_url(); ?>/public/assets/images/logo1.png" rel="icon">
+        <link href="<?php echo base_url("public/assets/images/logo1.png"); ?>" rel="icon">
 
-        <link href="<?php echo base_url(); ?>/public/assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="<?php echo base_url(); ?>/public/assets/css/plugin.min.css" rel="stylesheet">
-        <link href="<?php echo base_url(); ?>/public/assets/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+        <link href="<?php echo base_url("public/assets/css/bootstrap.min.css"); ?>" rel="stylesheet">
+        <link href="<?php echo base_url("public/assets/css/plugin.min.css"); ?>" rel="stylesheet">
+        <link href="<?php echo base_url("public/assets/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"); ?>" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 
-        <link href="<?php echo base_url(); ?>/public/assets/css/style.css" rel="stylesheet">
-        <link href="<?php echo base_url(); ?>/public/assets/css/responsive.css" rel="stylesheet">
+        <link href="<?php echo base_url("public/assets/css/style.css"); ?>" rel="stylesheet">
+        <link href="<?php echo base_url("public/assets/css/responsive.css"); ?>" rel="stylesheet">
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
     <body>
