@@ -47,7 +47,7 @@
 
                             </li>
                             <li class="rpdropdown">
-                                <a href="service" class="menu-links">Services</a>
+                                <a href="<?php echo site_url("service")?>" class="menu-links">Services</a>
 
                             </li>
 
