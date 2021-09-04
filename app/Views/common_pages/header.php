@@ -26,7 +26,7 @@
 
         <div class="onloadpage" id="page_loader">
             <div class="pre-content">
-                <div class="logo-pre"><img src="public/assets/images/logo1.png" alt="Christian app developer Logo" class="img-fluid" /></div>
+                <div class="logo-pre"><img src="<?php echo base_url("public/assets/images/logo1.png");?>" alt="Christian app developer Logo" class="img-fluid" /></div>
                 <div class="pre-text- text-radius text-light text-animation bg-b">Christian App Developer - Are 2 Seconds Away. Have Patience</div>
             </div>
         </div>
@@ -36,34 +36,35 @@
             <div class="container-fluid m-pad">
                 <div class="menu-header">
                     <div class="dsk-logo"><a class="nav-brand" href="<?php echo site_url("/"); ?>">
-                            <img  src="public/assets/images/white-logo.png" alt="Logo" class="mega-white-logo" />
-                            <img  src="public/assets/images/logo.png" alt="Logo" class="mega-darks-logo" />
+                            
+                            <img  src="<?php echo $blacktheme ? base_url("public/assets/images/logo.png") : base_url("public/assets/images/white-logo.png");?>" alt="Logo" class="mega-white-logo" />
+                            <img  src="<?php echo base_url("public/assets/images/logo.png");?>" alt="Logo" class="mega-darks-logo" />
                         </a>
                     </div>
                     <div class="custom-nav" roll="navigation">
                         <ul class="nav-list">
                             <li class=" rpdropdown">
-                                <a href="home" class="menu-links">Home</a>
+                                <a href="<?php echo site_url("home")?>" class="menu-links <?php echo $blacktheme ? "blacktextitem":"" ?>" >Home</a>
 
                             </li>
                             <li class="rpdropdown">
-                                <a href="<?php echo site_url("service")?>" class="menu-links">Services</a>
+                                <a href="<?php echo site_url("service")?>" class="menu-links <?php echo $blacktheme ? "blacktextitem":"" ?>">Services</a>
 
                             </li>
 
                             <li class=" rpdropdown">
-                                <a href="about" class="menu-links">About Us</a>
+                                <a href="<?php echo site_url("about")?>" class="menu-links <?php echo $blacktheme ? "blacktextitem":"" ?>">About Us</a>
 
                             </li>
                             <li>
                             <li class= "rpdropdown">
-                                <a href="contact" class="menu-links">Contact Us</a>
+                                <a href="<?php echo site_url("contact-us")?>" class="menu-links <?php echo $blacktheme ? "blacktextitem":"" ?>">Contact Us</a>
 
                             </li>
                             <li>
                                 <a href="#" class="menu-links right-bddr">&nbsp;</a>
 
-                            <li><a href="contact" class="btn-br bg-btn3 btshad-b2 lnk">Request A Quote <span class="circle"></span></a> </li>
+                            <li><a href="<?php echo site_url("contact-us")?>" class="btn-br bg-btn3 btshad-b2 lnk">Request A Quote <span class="circle"></span></a> </li>
                         </ul>
                     </div>
 
@@ -86,4 +87,9 @@
 
                 </nav>
             </div>
+            <style>
+                .blacktextitem{
+                    color:#050748!important;
+                }
+            </style>
         </header>

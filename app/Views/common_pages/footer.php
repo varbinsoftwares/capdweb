@@ -4,7 +4,7 @@
 			<div class="container">
 				<div class="row justify-content-between">
 					<div class="col-lg-4 col-sm-6  ftr-brand-pp ">
-						<a class="navbar-brand " href="#"> <img src="public/assets/images/logo1.png" alt="Logo" width="150" /></a>
+						<a class="navbar-brand " href="#"> <img src="<?php echo base_url("public/assets/images/logo1.png");?>" alt="Logo" width="150" /></a>
 						<p style="font-style: italic;">A website will allow your business or organization to be open 24 x 7.  Having a website is the equivalent of having an employee working around the clock – even weekends and holidays!</p>
 					</div>
 					<div class="col-lg-3 col-sm-6">
@@ -20,7 +20,7 @@
 							</li>
 							<li>
 								<span><i class="fas fa-map-marker-alt"></i></span>
-								<p>Address <span>H B Nagar Plot No. 63 Nagpur<br>Maharashtra, India.</span></p>
+								<p>Address <span>Nagpur, Maharashtra, India.</span></p>
 							</li>
 						</ul>
 					</div>

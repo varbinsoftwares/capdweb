@@ -1,4 +1,4 @@
-<?php echo view('common_pages/header.php');
+<?php echo view('common_pages/header.php', array("blacktheme"=>false));
 ?>
 <style type="text/css">
 .work-card img{
@@ -57,7 +57,7 @@
                 <a href="service">
                   <div class="service-card-hh">
                     <div class="image-sr-mm">
-                      <img alt="custom-sport" src="public/assets/images/<?php echo $value["image"];?>">
+                      <img alt="custom-sport" src="<?php echo base_url("public/assets/images/".$value["image"]);?>">
                     </div>
                     <div class="title-serv-c"><?php echo $value["title"];?></div>
                   </div>
@@ -96,98 +96,98 @@
         <div class="work-card-set">
           <div class="icon-set wow fadeIn" data-wow-delay=".2s">
             <div class="work-card cd1">
-              <div class="icon-bg"><img  src="public/assets/images/shop/graph.png" alt="Industries" /></div>
+              <div class="icon-bg"><img  src="<?php echo base_url("public/assets/images/shop/graph.png");?>" alt="Industries" /></div>
               <span>BUSINESS APP</span>
 
             </div>
           </div>
           <div class="icon-set wow fadeIn" data-wow-delay=".4s">
             <div class="work-card cd7">
-              <div class="icon-bg"><img src="public/assets/images/shop/calculation.png" alt="Industries" /></div>
+              <div class="icon-bg"><img src="<?php echo base_url("public/assets/images/shop/calculation.png");?>" alt="Industries" /></div>
               <span>EDUCATION APP</span>
             </div>
           </div>
           <div class="icon-set wow fadeIn" data-wow-delay=".6s">
             <div class="work-card cd3">
-              <div class="icon-bg"><img src="public/assets/images/shop/theater.png" alt="Industries" /></div>
+              <div class="icon-bg"><img src="<?php echo base_url("public/assets/images/shop/theater.png");?>" alt="Industries" /></div>
               <span>ENTERTAINMENT APP</span>
             </div>
           </div>
           <div class="icon-set wow fadeIn" data-wow-delay=".8s">
             <div class="work-card cd4">
-              <div class="icon-bg"><img src="public/assets/images/shop/money-bag.png" alt="Industries" /></div>
+              <div class="icon-bg"><img src="<?php echo base_url("public/assets/images/shop/money-bag.png");?>" alt="Industries" /></div>
               <span>FINANCE APP</span>
             </div>
           </div>
           <div class="icon-set wow fadeIn" data-wow-delay="1s">
             <div class="work-card cd5">
-              <div class="icon-bg"><img src="public/assets/images/shop/music-player.png" alt="Industries" /></div>
+              <div class="icon-bg"><img src="<?php echo base_url("public/assets/images/shop/music-player.png");?>" alt="Industries" /></div>
               <span>MUSIC APP</span>
             </div>
           </div>
           <div class="icon-set wow fadeIn" data-wow-delay="1.2s">
             <div class="work-card cd6">
-              <div class="icon-bg"><img src="public/assets/images/shop/picture.png" alt="Industries" /></div>
+              <div class="icon-bg"><img src="<?php echo base_url("public/assets/images/shop/picture.png");?>" alt="Industries" /></div>
               <span>PHOTO-VIDEO APP</span>
             </div>
           </div>
           <div class="icon-set wow fadeIn" data-wow-delay="1.4s">
             <div class="work-card cd2">
-              <div class="icon-bg"><img src="public/assets/images/shop/travel.png" alt="Industries" /></div>
+              <div class="icon-bg"><img src="<?php echo base_url("public/assets/images/shop/travel.png");?>" alt="Industries" /></div>
               <span>TRAVEL APP</span>
             </div>
           </div>
           <div class="icon-set wow fadeIn" data-wow-delay="1.6s">
             <div class="work-card cd8">
-              <div class="icon-bg"><img src="public/assets/images/shop/groceries.png" alt="Industries" /></div>
+              <div class="icon-bg"><img src="<?php echo base_url("public/assets/images/shop/groceries.png");?>" alt="Industries" /></div>
               <span>FOOD AND DRINK APP</span>
             </div>
           </div>
           <div class="icon-set wow fadeIn" data-wow-delay="1.8s">
             <div class="work-card cd4">
-              <div class="icon-bg"><img src="public/assets/images/shop/pray-1.png" alt="Industries" /></div>
+              <div class="icon-bg"><img src="<?php echo base_url("public/assets/images/shop/pray-1.png");?>" alt="Industries" /></div>
               <span>RELIGIOUS APP</span>
             </div>
           </div>
           <div class="icon-set wow fadeIn" data-wow-delay="2s">
             <div class="work-card cd10">
-              <div class="icon-bg"><img src="public/assets/images/shop/boy.png" alt="Industries" /></div>
+              <div class="icon-bg"><img src="<?php echo base_url("public/assets/images/shop/boy.png");?>" alt="Industries" /></div>
               <span>KIDS APP</span>
             </div>
           </div>
           <div class="icon-set wow fadeIn" data-wow-delay="2.2s">
             <div class="work-card cd11">
-              <div class="icon-bg"><img src="public/assets/images/shop/doctor.png" alt="Industries" /></div>
+              <div class="icon-bg"><img src="<?php echo base_url("public/assets/images/shop/doctor.png");?>" alt="Industries" /></div>
               <span>DOCTORS APP</span>
             </div>
           </div>
           <div class="icon-set wow fadeIn" data-wow-delay="2.4s">
             <div class="work-card cd12">
-              <div class="icon-bg"><img src="public/assets/images/shop/fitness.png" alt="Industries" /></div>
+              <div class="icon-bg"><img src="<?php echo base_url("public/assets/images/shop/fitness.png");?>" alt="Industries" /></div>
               <span>FITNESS APP</span>
             </div>
           </div>
           <div class="icon-set wow fadeIn" data-wow-delay="1.8s">
             <div class="work-card cd9">
-              <div class="icon-bg"><img src="public/assets/images/shop/text-lines.png" alt="Industries" /></div>
+              <div class="icon-bg"><img src="<?php echo base_url("public/assets/images/shop/text-lines.png");?>" alt="Industries" /></div>
               <span>NEWS APP</span>
             </div>
           </div>
           <div class="icon-set wow fadeIn" data-wow-delay="2s">
             <div class="work-card cd2">
-              <div class="icon-bg"><img src="public/assets/images/shop/soccer.png" alt="Industries" /></div>
+              <div class="icon-bg"><img src="<?php echo base_url("public/assets/images/shop/soccer.png");?>" alt="Industries" /></div>
               <span>SPORTS APP</span>
             </div>
           </div>
           <div class="icon-set wow fadeIn" data-wow-delay="2.2s">
             <div class="work-card cd5">
-              <div class="icon-bg"><img src="public/assets/images/shop/crm-1-1.png" alt="Industries" /></div>
+              <div class="icon-bg"><img src="<?php echo base_url("public/assets/images/shop/crm-1-1.png");?>" alt="Industries" /></div>
               <span>CRM APP</span>
             </div>
           </div>
           <div class="icon-set wow fadeIn" data-wow-delay="2.4s">
             <div class="work-card cd7">
-              <div class="icon-bg"><img src="public/assets/images/shop/share.png" alt="Industries" /></div>
+              <div class="icon-bg"><img src="<?php echo base_url("public/assets/images/shop/share.png");?>" alt="Industries" /></div>
               <span>SOCIAL APP</span>
             </div>
           </div>
@@ -200,7 +200,7 @@
 
 
 
-<section class="about-sec-rpb pad-tb">
+<section class="about-sec-rpb pad-tb" style="    background: #ffffff;">
   <div class="container">
     <div class="row justify-content-center text-center">
 
@@ -215,7 +215,7 @@
           </p><br><br>
 
           <div >
-            <img height="120px" width="180px"  src="public/assets/images/logo1.png">
+            <img height="120px" width="180px"  src="<?php echo base_url("public/assets/images/logo1.png");?>" alt"">
           </div><br><br>
 
         </div>
@@ -223,7 +223,7 @@
       </div>
       <div class="col-lg-5 col-sm-6">
 
-        <div class="img-responsive" data-tilt data-tilt-max="5" data-tilt-speed="1000" class="single-image bg-shape-dez wow fadeIn" data-wow-duration="2s"><img height="600px" width="450px" src="public/assets/images/service/mob1.png" alt="image" class="img-fluid"></div>
+        <div class="img-responsive" data-tilt data-tilt-max="5" data-tilt-speed="1000" class="single-image bg-shape-dez wow fadeIn" data-wow-duration="2s"><img height="600px" width="450px" src="<?php echo base_url("public/assets/images/service/mob1.png");?>" alt="image" class="img-fluid"></div>
       </div>
     </div>
   </div>
@@ -238,9 +238,9 @@
 
 
 
-      <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-6-cus wow fadeInUp" data-wow-delay=".4s">
+      <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-6-cus mt-3 wow fadeInUp" data-wow-delay=".4s">
         <div class="service-sec-list srvc-bg-nx srcl1">
-          <img src="public/assets/images/icons/development.svg" alt="service">
+          <img src="<?php echo base_url("public/assets/images/icons/development.svg");?>" alt="service">
           <h5 class="mb10">Web Development</h5>
           <ul class="-service-list">
             <li> <a href="#">PHP</a> </li>
@@ -253,9 +253,9 @@
       </div>
 
 
-      <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-6-cus  wow fadeInUp" data-wow-delay=".8s">
+      <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-6-cus  wow fadeInUp mt-3" data-wow-delay=".8s">
         <div class="service-sec-list srvc-bg-nx srcl3">
-          <img src="public/assets/images/icons/app.svg" alt="service">
+          <img src="<?php echo base_url("public/assets/images/icons/app.svg");?>" alt="service">
           <h5 class="mb10">Mobile App Development</h5>
           <ul class="-service-list">
             
@@ -269,9 +269,10 @@
         </div>
       </div>
       <hr>
-      <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-6-cus wow fadeInUp" data-wow-delay=".6s">
+      
+      <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-6-cus wow mt-3 fadeInUp" data-wow-delay=".6s">
         <div class="service-sec-list srvc-bg-nx srcl2">
-          <img height="120px" width="120px" src="public/assets/images/icons/business.svg" alt="service">
+          <img height="120px" width="120px" src="<?php echo base_url("public/assets/images/icons/business.svg");?>" alt="service">
           <h5 class="mb10">Business Automation</h5>
           <ul class="-service-list">
             <li> <a href="#">ERP </a> </li>
@@ -282,9 +283,9 @@
           <p>Your BPM (Business Process Management) solution must accommodate the entire range of work and support human driven system-driven, structured, unstructured and hybrid process.</p>
         </div>
       </div>
-      <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-6-cus wow fadeInUp" data-wow-delay="1s">
+      <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-6-cus wow mt-3 fadeInUp" data-wow-delay="1s">
         <div class="service-sec-list srvc-bg-nx srcl4">
-          <img src="public/assets/images/icons/seo.svg" alt="service">
+          <img src="<?php echo base_url("public/assets/images/icons/seo.svg");?>" alt="service">
           <h5 class="mb10">Web Hosting</h5>
           <ul class="-service-list">
             <li> <a href="#">cPanel </a> </li>
@@ -314,14 +315,14 @@
     <div class="weworkfor ">
       <div class="container">
         <div class="logo-weworkfor owl-carousel">
-          <div class="items"><img src="public/assets/images/process/cordova.png" alt="Technologies" class="img100w"></div>
-          <div class="items"><img src="public/assets/images/process/android.png" alt="Technologies" class="img100w">
+          <div class="items"><img src="<?php echo base_url("public/assets/images/process/cordova.png");?>" alt="Technologies" class="img100w"></div>
+          <div class="items"><img src="<?php echo base_url("public/assets/images/process/android.png");?>" alt="Technologies" class="img100w">
           </div>
-           <div class="items"><img height="80px" width="80px" src="public/assets/images/process/flutter.png" alt="Technologies" class="img100w"></div>
+           <div class="items"><img height="80px" width="80px" src="<?php echo base_url("public/assets/images/process/flutter.png");?>" alt="Technologies" class="img100w"></div>
     
-          <div class="items"><img src="public/assets/images/process/apple.png" alt="Technologies" class="img100w"></div>
-          <div class="items"><img src="public/assets/images/process/php.png" alt="Technologies" class="img100w"></div>
-          <div class="items"><img src="public/assets/images/process/mysql.png" alt="Technologies" class="img100w"></div>
+          <div class="items"><img src="<?php echo base_url("public/assets/images/process/apple.png");?>" alt="Technologies" class="img100w"></div>
+          <div class="items"><img src="<?php echo base_url("public/assets/images/process/php.png");?>" alt="Technologies" class="img100w"></div>
+          <div class="items"><img src="<?php echo base_url("public/assets/images/process/mysql.png");?>" alt="Technologies" class="img100w"></div>
          
         </div>
       </div>
@@ -350,12 +351,11 @@
       <div class="col-lg-6 col-sm-6 shape-loc wow fadeInUp" data-wow-delay=".5s">
         <div class="office-card">
           <div class="skyline-img" data-tilt data-tilt-max="4" data-tilt-speed="1000">
-            <img src="public/assets/images/location/india.png" alt="sydney" class="img-fluid" />
+            <img src="<?php echo base_url("public/assets/images/location/india.png");?>" alt="sydney" class="img-fluid" />
           </div>
           <div class="office-text text-center">
             <h4>India</h4>
-            <p>&nbsp; H B Nagar Plot No. 63 Nagpur,<br>
-               Maharashtra, India
+            <p>Nagpur, Maharashtra, India
             </p>
             <a href="https://www.google.co.in/maps/" target="blank" class="btn-outline">View on Map</a>
 
@@ -367,7 +367,7 @@
         <div class="office-text mt-0" style="margin-left: 60px;">
 
           <div  data-tilt data-tilt-max="4" data-tilt-speed="1000">
-            <img width="300px" src="public/assets/images/location/download.jpg" alt="sydney" class="img-fluid" />
+            <img width="300px" src="<?php echo base_url("public/assets/images/location/download.jpg");?>" alt="sydney" class="img-fluid" />
           </div>
 
 

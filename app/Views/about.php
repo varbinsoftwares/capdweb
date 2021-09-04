@@ -1,6 +1,6 @@
-  <?php echo view('common_pages/header.php');?>
+  <?php echo view('common_pages/header.php', array("blacktheme"=>true));?>
 
-  <section class="breadcrumb-areav2" data-background="public/assets/images/banner/5.jpg">
+  <section class="breadcrumb-areav2" data-background="<?php echo base_url("public/assets/images/banner/5.jpg"); ?>">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-7">
@@ -31,7 +31,7 @@
 
         <div class="col-lg-4 v-center order1">
           <div class="image">
-            <img src="public/assets/images/logo1.png" alt="Process" class="img-fluid" />
+            <img src="<?php echo base_url("public/assets/images/logo1.png");?>" alt="Process" class="img-fluid" />
           </div>
         </div>
         <div class="col-lg-8">
