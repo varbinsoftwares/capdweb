@@ -84,7 +84,7 @@
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group col-sm-6">
-                                <select name="Dtype" id="Dtype" name="subject" required>
+                                <select  id="Dtype" name="subject" required>
                                     <option value="Information">Select Requirement</option>
                                     <option value="Mobile app">Mobile app</option>
                                     <option value="Web development">Web development</option>

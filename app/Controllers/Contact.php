@@ -18,14 +18,14 @@ class Contact extends BaseController {
         $email = \Config\Services::email();
 
 
-         $config = array(
+        $config = array(
             'protocol' => 'smtp',
             'SMTPHost' => $configurationdict["email_server"],
             'SMTPPort' => $configurationdict["email_port"],
             'SMTPUser' => $configurationdict["email_sender"],
             'SMTPPass' => $configurationdict["email_password"],
             'smtp_timeout' => 30,
-            'mailType' => "text",
+            'mailType' => "html",
         );
 
         $config['charset'] = 'iso-8859-1';
@@ -44,11 +44,13 @@ class Contact extends BaseController {
                 $email->setFrom('noreply@christianappdevelopers.com', 'Christian App Developers');
                 $email->setTo('noreply@christianappdevelopers.com');
                 $email->setCC('contact@evansfrancis.org');
+                $email->setBCC('pankaj21pathak@gmail.com');
                 $email->setSubject('Enquiry From Website For ' . $postdata["subject"]);
-                $email->setMessage($postdata["message"]);
-                
-                 $email->send();
-              
+                $emailmessage = view("web_enquiry", array("web_enquiry"=>$postdata));
+                $email->setMessage($emailmessage);
+
+                $email->send();
+
                 return view("thanks");
             } else {
                 $data["message"] = "Wrong Captcha Entered...";
