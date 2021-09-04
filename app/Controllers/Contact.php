@@ -15,41 +15,40 @@ class Contact extends BaseController {
         foreach ($confdataarray as $key => $value) {
             $configurationdict[$value["conf_attr"]] = $value["conf_value"];
         }
+        $email = \Config\Services::email();
 
+
+         $config = array(
+            'protocol' => 'smtp',
+            'SMTPHost' => $configurationdict["email_server"],
+            'SMTPPort' => $configurationdict["email_port"],
+            'SMTPUser' => $configurationdict["email_sender"],
+            'SMTPPass' => $configurationdict["email_password"],
+            'smtp_timeout' => 30,
+            'mailType' => "text",
+        );
+
+        $config['charset'] = 'iso-8859-1';
+        $config['wordWrap'] = true;
+        $config["mailPath"] = "";
+
+
+        $email->initialize($config);
         $data["message"] = "";
         if ($postdata["submitdata"]) {
             if ($postdata["captcha"] == $captchacode) {
-                $email = \Config\Services::email();
 
-
-                $config = array(
-                    'protocol' => 'smtp',
-                    'smtp_host' => $configurationdict["email_server"],
-                    'smtp_port' => $configurationdict["email_port"],
-                    'smtp_user' => $configurationdict["email_sender"],
-                    'smtp_pass' => $configurationdict["email_password"],
-                    'smtp_timeout' => 30,
-                    'mailtype' => "text"
-                );
-
-                $config['charset'] = 'iso-8859-1';
-                $config['wordWrap'] = true;
-                $config["mailPath"] = "";
-
-
-                $email->initialize($config);
                 $email->setNewline("\r\n");
 
-
-                $email->initialize($config);
                 $email->clear();
                 $email->setFrom('noreply@christianappdevelopers.com', 'Christian App Developers');
                 $email->setTo('noreply@christianappdevelopers.com');
                 $email->setCC('contact@evansfrancis.org');
                 $email->setSubject('Enquiry From Website For ' . $postdata["subject"]);
                 $email->setMessage($postdata["message"]);
-
-                echo $email->send();
+                
+                 $email->send();
+              
                 return view("thanks");
             } else {
                 $data["message"] = "Wrong Captcha Entered...";
