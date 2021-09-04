@@ -14,7 +14,7 @@
   | existing namespaces of App\* namespaced-classes.
  */
 $mainurlredirect = "https://christianappdevelopers.com";
-$mainurlfunction = "https://christianappdevelopers.com";
+$mainurlfunction = "https://christianappdevelopers.com/";
 $baselink = 'http://' . $_SERVER['SERVER_NAME'];
 $islocal = false;
 switch ($baselink) {
