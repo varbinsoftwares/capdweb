@@ -32,8 +32,17 @@ class Contact extends BaseController {
                     'mailtype' => "text"
                 );
 
-                $email->initialize($config);
+                $config['charset'] = 'iso-8859-1';
+                $config['wordWrap'] = true;
+                $config["mailPath"] = "";
 
+
+                $email->initialize($config);
+                $email->setNewline("\r\n");
+
+
+                $email->initialize($config);
+                $email->clear();
                 $email->setFrom('noreply@christianappdevelopers.com', 'Christian App Developers');
                 $email->setTo('noreply@christianappdevelopers.com');
                 $email->setCC('contact@evansfrancis.org');
@@ -71,13 +80,16 @@ class Contact extends BaseController {
             'SMTPUser' => $configurationdict["email_sender"],
             'SMTPPass' => $configurationdict["email_password"],
             'smtp_timeout' => 30,
-            'mailType' => "text"
+            'mailType' => "text",
         );
+
         $config['charset'] = 'iso-8859-1';
         $config['wordWrap'] = true;
+        $config["mailPath"] = "";
 
 
         $email->initialize($config);
+        $email->setNewline("\r\n");
 
 
 
@@ -89,8 +101,7 @@ class Contact extends BaseController {
         $email->setSubject('Enquiry From Website For ');
         $email->setMessage("this is test message");
         echo $email->send();
-             echo $email->printDebugger();
-
+        echo $email->printDebugger();
     }
 
     function hexrgb($hexstr) {
