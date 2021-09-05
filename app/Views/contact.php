@@ -32,7 +32,7 @@
                             <i class="fas fa-map-marker"></i>
                         </div>
                         <div class="text pl-4">
-                            <p><span>Address:</span>H B Nagar Plot No. 63 Nagpur</p>
+                            <p><span>Address:</span>Nagpur, Maharashtra, India</p>
                         </div>
                     </div>
                     <div class="dbox d-flex align-items-start">
