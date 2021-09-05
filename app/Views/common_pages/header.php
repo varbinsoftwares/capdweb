@@ -61,16 +61,12 @@
                                 <a href="<?php echo site_url("contact-us")?>" class="menu-links <?php echo $blacktheme ? "blacktextitem":"" ?>">Contact Us</a>
 
                             </li>
-                            <li>
-                                <a href="#" class="menu-links right-bddr">&nbsp;</a>
-
-                            <li><a href="<?php echo site_url("contact-us")?>" class="btn-br bg-btn3 btshad-b2 lnk">Request A Quote <span class="circle"></span></a> </li>
                         </ul>
                     </div>
 
                     <div class="mobile-menu2">
                         <ul class="mob-nav2">
-                            <li><a href="#" class="btn-round- trngl btn-br bg-btn btshad-b1" id="mobilepopup"><i class="fas fa-envelope-open-text" aria-label="Contact Us"></i></a></li>
+                          
                             <li class="navm-"> <a class="toggle" href="#"><span></span></a></li>
                         </ul>
                     </div>
