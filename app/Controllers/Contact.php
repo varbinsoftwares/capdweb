@@ -45,10 +45,10 @@ class Contact extends BaseController {
         $email->initialize($config);
         $data["message"] = "";
         if (isset($postdata["submitdata"])) {
-
+            echo "enter to check post";
             $captchacode = $session->get("captchacode");
             if ($postdata["captcha"] == $captchacode) {
-
+                echo "enter to send email";
                 $email->setNewline("\r\n");
 
                 $email->clear();
@@ -61,7 +61,7 @@ class Contact extends BaseController {
                 $email->setMessage($emailmessage);
 
                 $email->send();
-
+                echo $email->printDebugger();
                 return view("thanks");
             } else {
                 $data["message"] = "Wrong Captcha Entered...";
