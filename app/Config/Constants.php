@@ -13,8 +13,8 @@
   | NOTE: changing this will require manually modifying the
   | existing namespaces of App\* namespaced-classes.
  */
-$mainurlredirect = "https://christianappdevelopers.com";
-$mainurlfunction = "https://christianappdevelopers.com/";
+$mainurlredirect = "https://www.christianappdevelopers.com";
+$mainurlfunction = "https://www.christianappdevelopers.com/";
 $baselink = 'http://' . $_SERVER['SERVER_NAME'];
 $islocal = false;
 switch ($baselink) {
@@ -25,7 +25,7 @@ switch ($baselink) {
         break;
 
     default:
-        $mainurlredirect = "https://christianappdevelopers.com";
+        $mainurlredirect = "https://www.christianappdevelopers.com";
 }
 
 defined('BASESEURL') || define('BASESEURL', $mainurlredirect);
