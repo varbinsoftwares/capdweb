@@ -85,20 +85,19 @@ class Contact extends BaseController {
 //        );
 
         $config = array(
-        'protocol' => 'sendmail',
-//        'SMTPHost' => "ssl://smtp.googlemail.com",
-//        'SMTPPort' => "587",
-//        'SMTPUser' => "pankajmanpreet0@gmail.com",
-//        'SMTPPass' => "P@ssw0rd*#!",
-//    
-//        'smtp_timeout' => 30,
-//        'mailType' => "text",
+        'protocol' => 'smtp',
+        'SMTPHost' => "smtp.gmail.com",
+        'SMTPPort' => "587",
+        'SMTPUser' => "pankajmanpreet0@gmail.com",
+        'SMTPPass' => "P@ssw0rd*#!",
+        'smtp_timeout' => 30,
+        'mailType' => "text",
        
         );
 
         $config['charset'] = 'iso-8859-1';
         $config['wordWrap'] = true;
-        $config["mailPath"] = "/usr/bin/sendmai";
+//        $config["mailPath"] = "/usr/bin/sendmai";
 
 
         $email->initialize($config);
