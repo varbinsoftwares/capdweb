@@ -44,7 +44,7 @@ class Contact extends BaseController {
 
         $email->initialize($config);
         $data["message"] = "";
-        if ($postdata["submitdata"]) {
+        if (isset($postdata["submitdata"])) {
             if ($postdata["captcha"] == $captchacode) {
 
                 $email->setNewline("\r\n");
