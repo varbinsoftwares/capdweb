@@ -16,6 +16,12 @@
     </div>
 </section>
 
+<script>
 
+setInterval(function(){
+    window.location = "<?php site_url("contact-us");?>"
+},3000);
+
+</script>
 
 <?php echo view('common_pages/footer.php'); ?>
