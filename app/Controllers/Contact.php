@@ -46,7 +46,7 @@ class Contact extends BaseController {
                 $email->setCC('contact@evansfrancis.org');
                 $email->setBCC('pankaj21pathak@gmail.com');
                 $email->setSubject('Enquiry From Website For ' . $postdata["subject"]);
-                $emailmessage = view("web_enquiry", array("web_enquiry"=>$postdata));
+                $emailmessage = view("web_enquiry", array("web_enquiry" => $postdata));
                 $email->setMessage($emailmessage);
 
                 $email->send();
@@ -74,26 +74,38 @@ class Contact extends BaseController {
         foreach ($confdataarray as $key => $value) {
             $configurationdict[$value["conf_attr"]] = $value["conf_value"];
         }
+//        $config = array(
+//            'protocol' => 'smtp',
+//            'SMTPHost' => $configurationdict["email_server"],
+//            'SMTPPort' => $configurationdict["email_port"],
+//            'SMTPUser' => $configurationdict["email_sender"],
+//            'SMTPPass' => $configurationdict["email_password"],
+//            'smtp_timeout' => 30,
+//            'mailType' => "text",
+//        );
+
         $config = array(
-            'protocol' => 'smtp',
-            'SMTPHost' => $configurationdict["email_server"],
-            'SMTPPort' => $configurationdict["email_port"],
-            'SMTPUser' => $configurationdict["email_sender"],
-            'SMTPPass' => $configurationdict["email_password"],
-            'smtp_timeout' => 30,
-            'mailType' => "text",
+        'protocol' => 'sendmail',
+        'SMTPHost' => "ssl://smtp.googlemail.com",
+        'SMTPPort' => "587",
+        'SMTPUser' => "pankajmanpreet0@gmail.com",
+        'SMTPPass' => "P@ssw0rd*#!",
+    
+        'smtp_timeout' => 30,
+        'mailType' => "text",
+       
         );
 
         $config['charset'] = 'iso-8859-1';
         $config['wordWrap'] = true;
-        $config["mailPath"] = "";
+        $config["mailPath"] = "/usr/bin/sendmai";
 
 
         $email->initialize($config);
         $email->setNewline("\r\n");
 
 
-
+print_r($email);
 
         $email->clear();
         $email->setFrom('noreply@christianappdevelopers.com', 'Christian App Developers');
