@@ -6,7 +6,7 @@ class Contact extends BaseController {
 
     public function index() {
         $session = session();
-       echo $captchacode = $session->get("captchacode");
+
         $postdata = $this->request->getPost();
         $db = db_connect();
         $query = $db->query("select * from conf_site where conf_description = 'email'");
@@ -45,6 +45,8 @@ class Contact extends BaseController {
         $email->initialize($config);
         $data["message"] = "";
         if (isset($postdata["submitdata"])) {
+
+            $captchacode = $session->get("captchacode");
             if ($postdata["captcha"] == $captchacode) {
 
                 $email->setNewline("\r\n");
