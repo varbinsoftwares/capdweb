@@ -86,13 +86,13 @@ class Contact extends BaseController {
 
         $config = array(
         'protocol' => 'sendmail',
-        'SMTPHost' => "ssl://smtp.googlemail.com",
-        'SMTPPort' => "587",
-        'SMTPUser' => "pankajmanpreet0@gmail.com",
-        'SMTPPass' => "P@ssw0rd*#!",
-    
-        'smtp_timeout' => 30,
-        'mailType' => "text",
+//        'SMTPHost' => "ssl://smtp.googlemail.com",
+//        'SMTPPort' => "587",
+//        'SMTPUser' => "pankajmanpreet0@gmail.com",
+//        'SMTPPass' => "P@ssw0rd*#!",
+//    
+//        'smtp_timeout' => 30,
+//        'mailType' => "text",
        
         );
 
