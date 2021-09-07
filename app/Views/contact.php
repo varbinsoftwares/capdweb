@@ -67,7 +67,7 @@
                     <p class="mb60 mt10">We will catch you as early as we receive the message</p>
                 </div>
                 <div class="form-block">
-                    <form id="contactForm" data-toggle="validator" class="shake" action="<?php echo site_url("Contact/index") ?>" method="post">
+                    <form id="contactForm" data-toggle="validator" class="shake" action="<?php echo site_url("Contact") ?>" method="post">
                         <div class="row">
                             <div class="form-group col-sm-6">
                                 <input type="text" id="name" placeholder="Enter name" name="name" required data-error="Please fill Out">
