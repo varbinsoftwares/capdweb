@@ -45,10 +45,10 @@ class Contact extends BaseController {
         $email->initialize($config);
         $data["message"] = "";
         if (isset($postdata["submitdata"])) {
-            echo "enter to check post";
+//            echo "enter to check post";
             $captchacode = $session->get("captchacode");
             if ($postdata["captcha"] == $captchacode) {
-                echo "enter to send email";
+//                echo "enter to send email";
                 $email->setNewline("\r\n");
 
                 $email->clear();
@@ -122,8 +122,8 @@ class Contact extends BaseController {
         $email->setCC('contact@evansfrancis.org');
         $email->setSubject('Enquiry From Website For ');
         $email->setMessage("this is test message");
-        echo $email->send();
-        echo $email->printDebugger();
+//        echo $email->send();
+//        echo $email->printDebugger();
     }
 
     function hexrgb($hexstr) {
