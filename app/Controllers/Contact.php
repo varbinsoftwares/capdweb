@@ -6,7 +6,7 @@ class Contact extends BaseController {
 
     public function index() {
         $session = session();
-        $captchacode = $session->get("captchacode");
+       echo $captchacode = $session->get("captchacode");
         $postdata = $this->request->getPost();
         $db = db_connect();
         $query = $db->query("select * from conf_site where conf_description = 'email'");
@@ -34,7 +34,7 @@ class Contact extends BaseController {
             'SMTPUser' => "pankajmanpreet0@gmail.com",
             'SMTPPass' => "P@ssw0rd*#!",
             'smtp_timeout' => 30,
-            'mailType' => "text",
+            'mailType' => "html",
         );
 
         $config['charset'] = 'iso-8859-1';
